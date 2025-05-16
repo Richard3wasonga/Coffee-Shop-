@@ -14,6 +14,6 @@ class Customer:
         if not isinstance(new_name,str):
             raise TypeError("Name must be a string")
         if not re.match(r'^.{1,15}$', new_name):
-            raise ValueError("Name must be between 1 and i5 characters.")
+            raise ValueError("Name must be between 1 and 15 characters.")
         self._name = new_name
 

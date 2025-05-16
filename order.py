@@ -23,7 +23,7 @@ class Order:
     @coffee.setter
     def coffee(self,current_coffee):
         if not isinstance(current_coffee,Coffee):
-            raise TypeError("coffee must be a Coffee instsnce")
+            raise TypeError("coffee must be a Coffee instance")
         self._coffee = current_coffee
 
     @property
