@@ -218,5 +218,6 @@ class Order:
    ```python
    kylie = Customer("Kylie")
    latte = Coffee("Latte")
+   ```
 
    
