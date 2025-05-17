@@ -213,8 +213,10 @@ class Order:
 
 ## **How to use the system**
 
+```python
 1. Create customers and coffees:
-   ```python#
+   ```python
    kylie = Customer("Kylie")
    latte = Coffee("Latte")
+
    
