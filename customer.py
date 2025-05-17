@@ -2,8 +2,11 @@ import re
 
 class Customer:
 
+    all = []
+
     def __init__(self,name):
         self.name = name
+        Customer.all.append(self)
 
     @property
     def name(self):
@@ -16,4 +19,12 @@ class Customer:
         if not re.match(r'^.{1,15}$', new_name):
             raise ValueError("Name must be between 1 and 15 characters.")
         self._name = new_name
+
+    def orders(self):
+        from order import Order
+        return [order for order in Order.all if order.customer == self]
+
+    def coffees(self):
+        return list({order.coffee for order in self.orders()})
+
 
