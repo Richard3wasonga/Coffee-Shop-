@@ -213,12 +213,32 @@ class Order:
 
 ## **How to use the system**
 
-```python
 1. Create customers and coffees:
    ```python
    kylie = Customer("Kylie")
    latte = Coffee("Latte")
    ```
+2. Create orders:
+```python
+order1 = Order(kylie,latte, 3.5)
 ```
 
+or via customer method
+
+```python
+kylie.create_order(latte,3.5)
+
+```
+3. Retrieve data:
+
+```python
+print(kylie.orders())           # List of all Kylie’s orders
+print(latte.customers())        # Customers who ordered latte
+print(latte.num_orders())       # Number of latte orders
+print(latte.average_price())    # Average latte price
+print(Customer.most_aficionado(latte))  # Customer who spent most on latte
+print(Order.total_sales())      # Total revenue from all orders
+print(kylie.total_spent())      # Total spent by Kylie
+
+```
    
