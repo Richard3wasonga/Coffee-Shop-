@@ -214,7 +214,7 @@ class Order:
 ## **How to use the system**
 
 1. Create customers and coffees:
-   ```python#
+   <pre>```python#
    kylie = Customer("Kylie")
    latte = Coffee("Latte")
-   ```
+   ```</pre>
