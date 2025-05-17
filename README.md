@@ -219,26 +219,74 @@ class Order:
    latte = Coffee("Latte")
    ```
 2. Create orders:
-```python
-order1 = Order(kylie,latte, 3.5)
-```
+   ```python
+   order1 = Order(kylie,latte, 3.5)
+   ```
 
-or via customer method
+   or via customer method
 
-```python
-kylie.create_order(latte,3.5)
+   ```python
+   kylie.create_order(latte,3.5)
 
-```
+   ```
 3. Retrieve data:
 
-```python
-print(kylie.orders())           # List of all Kylie’s orders
-print(latte.customers())        # Customers who ordered latte
-print(latte.num_orders())       # Number of latte orders
-print(latte.average_price())    # Average latte price
-print(Customer.most_aficionado(latte))  # Customer who spent most on latte
-print(Order.total_sales())      # Total revenue from all orders
-print(kylie.total_spent())      # Total spent by Kylie
+   ```python
+   print(kylie.orders())           # List of all Kylie’s orders
+   print(latte.customers())        # Customers who ordered latte
+   print(latte.num_orders())       # Number of latte orders
+   print(latte.average_price())    # Average latte price
+   print(Customer.most_aficionado(latte))  # Customer who spent most on latte
+   print(Order.total_sales())      # Total revenue from all orders
+   print(kylie.total_spent())      # Total spent by Kylie
 
-```
-   
+   ```
+---
+
+## **Important Notes**
+
+- **Price validation**: Ensures the price is a float between 1.0 abd 10.0.
+
+- **Name Validation**: Customer and Coffee names are validated for type and length.
+
+- **Instance Tracking**: Each class uses variables like `customer.all` to keep track of all instances for easy querying.
+
+- **Circular Imports**: Avoided by importing classes **inside methods** instead of at the top of the file.
+
+- **Why Use**`main.py`: All object creation is done `main.py` to **separate business logic from class definitions** and to **prevent circular import issues**.
+
+---
+## **Project Structure**
+
+  ```css
+  Coffee_Shop_Challenge/
+  |__ customer.py
+  |__coffee.py 
+  |__order.py
+  |__main.py
+  |__README.md
+
+  ```
+
+## **Features Overview**
+
+- Prevent duplicate data or invalid inputs
+
+- Caluculate number and average price of order
+
+- Identify customer who spend the most per coffee type
+
+---
+
+## **Authors**
+- Richard Wasonga - [GitHub Profile](https://github.com/Richard3wasonga)
+
+## **Contributors**
+- Bob Oyier - [GitHub Profile](https://github.com/oyieroyier)
+
+---
+
+## **License**
+
+This project is open-source and available under the MIT License.
+
