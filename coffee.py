@@ -32,3 +32,37 @@ class Coffee:
             return 0
         return sum([order.price for order in orders]) / len(orders)
 
+
+
+# COFFEE PSEDO CODE
+# -----------------
+
+# class Coffee
+#      all_coffees = []
+
+#      INIT(name):
+#          IF name is not a string:
+#               RAISE TypeError
+#          IF name is shorter than 3 characters:
+#              RAISE ValueError
+#         SET internal name
+#          ADD self to coffee.all_coffees
+
+
+#      GET name:
+#         RETURN internal name
+
+#     DEF orders():
+#           IMPORT order class
+#          RETURN list of orders where order.coffee == self
+
+#      DEF customers():
+#           RETURN unique list of customers from self coffee's orders
+
+#      DEF num_orders():
+#           RETURN number of orders for this coffee
+
+#     DEF average_price():
+#          IF no orders:
+#              RETURN 0
+#          RETURN average of order prices for self coffee

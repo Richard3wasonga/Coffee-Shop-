@@ -48,6 +48,36 @@ class Order:
         self._price =new_price
         self._set_price = True
 
+
+
+
+# ORDER PSEDO CODE
+#  ----------------
+
+#class order:
+#   all_orders = []
+
+#   INIT(customer,coffee,price):
+ #       VALIADATE customer is Customer
+ #       VALIDATE coffee is Coffee
+ #       VALIDATE price is float between 1.0 and 10.0
+
+ #       GET customer,coffee,price
+ #       SET customer,coffee,price
+ #       Lock price from future changes
+ #       Add self to order.all_orders
+
+ #   SETTER customer:
+ #       RAISE error if not a customer
+
+#    SETTER coffee:
+ #       RAISE error if not coffee
+
+ #   SETTER price:
+ #       IF price already set, RAISE error
+ #       VALIDATE type and range
+ #       SET price, lock it
+
     
 
 

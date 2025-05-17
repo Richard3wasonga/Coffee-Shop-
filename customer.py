@@ -47,4 +47,36 @@ class Customer:
 
         return best_customer
 
+
+# CUSTOMER PSEDO CODE
+#  -------------------
+
+#class Customer:
+#     all_customers = []
+
+#     INIT(name):
+#         VALIDATE name is string, 1-15 characters
+#         SET internal name
+#         ADD self to customer.all_customers
+
+#     GET name:
+#         RETURN internal name
+
+#     SET name(new_name):
+#         VALIDATE type and length
+#         SET internal name
+
+#     DEF orders():
+#         IMPORT order
+#         RETURN list of orders where order.customer == self
+
+#     DEF create_order(coffee, price):
+#          IMPORT order
+#          RETURN new order with self,coffee, price
+
+#     CLASS METHOD most_aficionado(coffee):
+#         FOR each customer:
+#              CALUCULATE total spent on given coffee
+#         RETURN customer who spent the most
+
  
